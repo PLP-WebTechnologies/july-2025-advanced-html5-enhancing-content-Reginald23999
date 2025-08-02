@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample HTML5 page showcasing lists, tables, media, and a validated form.">
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My HTML5 Showcase</h1>
+    <nav>
+      <ul>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="lists">
+      <h2>HTML5 Lists</h2>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+      </ul>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>First Step</li>
+        <li>Second Step</li>
+        <li>Third Step</li>
+      </ol>
+    </section>
+
+    <section id="table">
+      <h2>HTML5 Table</h2>
+      <table border="1">
+        <caption>Monthly Expenses</caption>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rent</td>
+            <td>$800</td>
+          </tr>
+          <tr>
+            <td>Groceries</td>
+            <td>$200</td>
+          </tr>
+          <tr>
+            <td>Utilities</td>
+            <td>$150</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>Embedded Media</h2>
+      <h3>Image</h3>
+      <img src="sample.jpg" alt="A sample image" width="300">
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video</h3>
+      <video controls width="320">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="form">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required autocomplete="on"><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+          </select><br><br>
+
+          <label>Subscribe:</label>
+          <input type="checkbox" id="subscribe" name="subscribe" checked readonly><label for="subscribe">Yes, subscribe me</label><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
